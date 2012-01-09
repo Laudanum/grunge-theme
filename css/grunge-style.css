@@ -224,7 +224,7 @@ div#header-top.block {
   padding : 0;
 }
 
-ul.menu li {
+.sidebar ul.menu li, .main-menu ul.menu li {
 	background: url(../images/buttons.png) no-repeat scroll -436px 6px transparent;
   border-bottom: 1px dashed #7E6248;
   list-style: none;
@@ -296,149 +296,154 @@ ul.menu ul ul {
   z-index: 2;
 }
 
-#main-menu-inner ul.menu,
-#main-menu-inner ul.menu * {
+#main-menu-inner ul.main-menu,
+#main-menu-inner ul.main-menu * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-#main-menu-inner ul.menu {
+#main-menu-inner ul.main-menu {
 	line-height: 1.0;
 }
 
-#main-menu-inner ul.menu {
+#main-menu-inner ul.main-menu {
 	float: right;
   margin-right: 10px;
 }
 
-#main-menu-inner ul.menu ul {
+#main-menu-inner ul.main-menu ul {
 	position: absolute;
 	top: -999em;
 	width: 170px; /* left offset of submenus need to match (see below) */
 }
 
-#main-menu-inner ul.menu ul li {
+#main-menu-inner ul.main-menu ul li {
 	width: 100%;
 }
 
-#main-menu-inner ul.menu li:hover {
+#main-menu-inner ul.main-menu li:hover {
 	visibility: inherit; /* fixes IE7 'sticky bug' */
 }
 
-#main-menu-inner ul.menu li {
+#main-menu-inner ul.main-menu li {
 	float: left;
 	position: relative;
 	background-image : none;
+	height : 31px;
 }
 
-#main-menu-inner ul.menu a {
+#main-menu-inner ul.main-menu a {
 	display: block;
 	position: relative;
 }
 
-#main-menu-inner ul.menu li:hover ul,
-#main-menu-inner ul.menu li.sfHover ul {
+#main-menu-inner ul.main-menu li:hover ul,
+#main-menu-inner ul.main-menu li.sfHover ul {
 	left: 0;
-	top: 36px; /* match top ul list item height */
+	top: 31px; /* match top ul list item height */
 	z-index: 99;
 }
 
-#main-menu-inner ul.menu li:hover li ul,
-#main-menu-inner ul.menu li.sfHover li ul {
+#main-menu-inner ul.main-menu li:hover li ul,
+#main-menu-inner ul.main-menu li.sfHover li ul {
 	top: -999em;
 }
 
-#main-menu-inner ul.menu li li:hover ul,
-#main-menu-inner ul.menu li li.sfHover ul {
+#main-menu-inner ul.main-menu li li:hover ul,
+#main-menu-inner ul.main-menu li li.sfHover ul {
 	left: 170px; /* match ul width */
 	top: 0;
 }
 
-#main-menu-inner ul.menu li li:hover li ul,
-#main-menu-inner ul.menu li li.sfHover li ul {
+#main-menu-inner ul.main-menu li li:hover li ul,
+#main-menu-inner ul.main-menu li li.sfHover li ul {
 	top: -999em;
 }
 
-#main-menu-inner ul.menu li li li:hover ul,
-#main-menu-inner ul.menu li li li.sfHover ul {
+#main-menu-inner ul.main-menu li li li:hover ul,
+#main-menu-inner ul.main-menu li li li.sfHover ul {
 	left: 170px; /* match ul width */
 	top: 0;
 }
 
 /*** Skin ***/
-#main-menu-inner ul.menu a {
+#main-menu-inner ul.main-menu a {
 	background: url(../images/arrow-on.png) 9px 50% no-repeat;
   font-size: 15px;
-  padding: 2px 12px 2px 21px;
+  padding: 5px 18px 5px 21px;
+  height : 21px;
 	text-decoration: none;
   text-transform: uppercase;
 }
 
-#main-menu-inner ul.menu a,
-#main-menu-inner ul.menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+#main-menu-inner ul.main-menu a,
+#main-menu-inner ul.main-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
   color: #FFF;
   font-family: 'Bebas', Arial, Helvetica, sans-serif;
 }
 
-#main-menu-inner ul.menu li {
+#main-menu-inner ul.main-menu li {
   padding: 1px;
   border: none;
 }
 
-#main-menu-inner ul.menu li.active-trail,
-#main-menu-inner ul.menu li:hover,
-#main-menu-inner ul.menu li.sfHover {
+#main-menu-inner ul.main-menu li.active-trail,
+#main-menu-inner ul.main-menu li:hover,
+#main-menu-inner ul.main-menu li.sfHover {
   padding: 0;
   border: 1px solid #000;
 }
 
-#main-menu-inner ul.menu li.active-trail li,
-#main-menu-inner ul.menu li:hover li,
-#main-menu-inner ul.menu li.sfHover li {
+#main-menu-inner ul.main-menu li.active-trail li,
+#main-menu-inner ul.main-menu li:hover li,
+#main-menu-inner ul.main-menu li.sfHover li {
   border: none;
-  border-bottom: 1px dashed #000;
+  border-top: 1px dashed #000;
+}
+#main-menu-inner ul.main-menu li.sfHover li.first {
+  border-top : none;
 }
 
-#main-menu-inner ul.menu li ul {
+#main-menu-inner ul.main-menu li ul {
 	border: 1px solid #000;
   background-color: #47270A;
   margin-left: -1px;
 }
 
-#main-menu-inner ul.menu li ul ul {
+#main-menu-inner ul.main-menu li ul ul {
   margin-top: -1px;
   margin-left: 0;
 }
 
-#main-menu-inner ul.menu li li {
+#main-menu-inner ul.main-menu li li {
   padding: 0;
   border: none;
-  border-bottom: 1px dashed #000;
+  border-top: 1px dashed #000;
 }
 
-#main-menu-inner ul.menu li li.last {
-  border: none;
+#main-menu-inner ul.main-menu li li.last {
+
 }
 
-#main-menu-inner ul.menu li:hover a,
-#main-menu-inner ul.menu li.sfHover a {
+#main-menu-inner ul.main-menu li:hover a,
+#main-menu-inner ul.main-menu li.sfHover a {
   background: url(../images/arrow-down.png) 9px 50% no-repeat #53300C;
 }
 
-#main-menu-inner ul.menu li:hover li:hover a,
-#main-menu-inner ul.menu li.sfHover li.sfHover a,
-#main-menu-inner ul.menu li:hover li:hover li:hover a,
-#main-menu-inner ul.menu li.sfHover li.sfHover li.sfHover a {
+#main-menu-inner ul.main-menu li:hover li:hover a,
+#main-menu-inner ul.main-menu li.sfHover li.sfHover a,
+#main-menu-inner ul.main-menu li:hover li:hover li:hover a,
+#main-menu-inner ul.main-menu li.sfHover li.sfHover li.sfHover a {
 	background: url(../images/arrow-down.png) 9px 50% no-repeat #47270A;
 }
 
-#main-menu-inner ul.menu a.active,
-#main-menu-inner ul.menu a:hover,
-#main-menu-inner ul.menu li:hover li a,
-#main-menu-inner ul.menu li.sfhover li a,
-#main-menu-inner ul.menu li:hover li:hover li a,
-#main-menu-inner ul.menu li.sfHover li.sfHover li a {
+#main-menu-inner ul.main-menu a.active,
+#main-menu-inner ul.main-menu a:hover,
+#main-menu-inner ul.main-menu li:hover li a,
+#main-menu-inner ul.main-menu li.sfhover li a,
+#main-menu-inner ul.main-menu li:hover li:hover li a,
+#main-menu-inner ul.main-menu li.sfHover li.sfHover li a {
 	background: url(../images/arrow-on.png) 9px 50% no-repeat #53300C;
 }
 
@@ -789,6 +794,7 @@ h1.title {
 	font-family: 'Bebas', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size : 27px;
+  word-spacing: 8px;
 }
 
 
@@ -889,7 +895,7 @@ h2.block-title {
   text-transform: uppercase;
 }
 
-h2.block-title span {
+h1.title span, h2.block-title span {
 	color: #8B553D;
 }
 
@@ -1038,13 +1044,54 @@ ul.pager a:focus {
 /* Typography and backgrounds for all form buttons */
 form input.form-submit {
   margin: 2px;
-  padding: 3px 5px;
+  padding: 2px 15px;
+  border: none;
+
+  background-color : rgb(115,15,7);
+  
+  background-image: linear-gradient(bottom, rgb(89,13,6) 4%, rgb(115,14,7) 52%, rgb(153,20,10) 76%);
+  background-image: -o-linear-gradient(bottom, rgb(89,13,6) 4%, rgb(115,14,7) 52%, rgb(153,20,10) 76%);
+  background-image: -moz-linear-gradient(bottom, rgb(89,13,6) 4%, rgb(115,14,7) 52%, rgb(153,20,10) 76%);
+  background-image: -webkit-linear-gradient(bottom, rgb(89,13,6) 4%, rgb(115,14,7) 52%, rgb(153,20,10) 76%);
+  background-image: -ms-linear-gradient(bottom, rgb(89,13,6) 4%, rgb(115,14,7) 52%, rgb(153,20,10) 76%);
+
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.04, rgb(89,13,6)),
+  	color-stop(0.52, rgb(115,14,7)),
+  	color-stop(0.76, rgb(153,20,10))
+  );
+  
+  border-radius : 5px;
+  color: #EF8B05;
+  line-height: 25px;
+  font-family: georgia,garamond,serif;
+  text-transform: uppercase;
+  font-size: 14px;  
 }
 
 /* Hover style for form buttons */
 form input.form-submit:hover,
 form input.form-submit.hover,
 form input.form-submit:focus {
+  text-decoration : underline;
+  background-image: linear-gradient(bottom, rgb(89,13,6) 76%, rgb(115,14,7) 52%, rgb(153,20,10) 4%);
+  background-image: -o-linear-gradient(bottom, rgb(89,13,6) 76%, rgb(115,14,7) 52%, rgb(153,20,10) 4%);
+  background-image: -moz-linear-gradient(bottom, rgb(89,13,6) 76%, rgb(115,14,7) 52%, rgb(153,20,10) 4%);
+  background-image: -webkit-linear-gradient(bottom, rgb(89,13,6) 76%, rgb(115,14,7) 52%, rgb(153,20,10) 4%);
+  background-image: -ms-linear-gradient(bottom, rgb(89,13,6) 76%, rgb(115,14,7) 52%, rgb(153,20,10) 4%);
+
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.76, rgb(89,13,6)),
+  	color-stop(0.52, rgb(115,14,7)),
+  	color-stop(0.04, rgb(153,20,10))
+  );
+
 }
 
 /* Typography, background, borders, padding for form fields */
@@ -1476,4 +1523,14 @@ a.readon span {
   height: 20px;
   background-color: #B4A684;
   border: 1px solid #2F2106;
+}
+
+.sf-menu.sf-style-default li li:hover, 
+.sf-menu.sf-style-default li li,
+.sf-menu.sf-style-default li {
+  background-color : #53300C;
+}
+.sf-menu.sf-style-default a {
+  border-left : none;
+  border-top : none;
 }

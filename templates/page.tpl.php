@@ -43,7 +43,7 @@
       </div>
 
       <!-- main row: width = grid_width -->
-      <div id="main-wrapper" class="main-wrapper full-width clearfix">
+      <div id="main-wrapper" class="main-wrapper full-width clearfix <?php print theme_get_setting('sidebar_layout'); ?>-<?php print $sidebar_first_width; ?>-<?php print $sidebar_second_width; ?>">
 
         <div id="main" class="main region <?php print $grid_width; ?>">
           <div id="main-inner" class="main-inner inner clearfix">
@@ -120,7 +120,6 @@
 			</div>
 
       <!-- footer row: width = grid_width -->
-      <?php print render($page['postscript_bottom']); ?>
       <?php print render($page['footer']); ?>
 
     </div><!-- /page-inner -->

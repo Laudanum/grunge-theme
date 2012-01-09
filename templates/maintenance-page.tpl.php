@@ -80,6 +80,6 @@
 
     </div><!-- /page-inner -->
   </div><!-- /page -->
-  <?php print $closure; ?>
+      <?php print render($page['footer']); ?>
 </body>
 </html>
