@@ -15,6 +15,7 @@ regions[sidebar_first] = sidebar first
 regions[sidebar_second] = sidebar second
 regions[header_top] = header top
 regions[header] = header
+regions[main_menu] = Main menu
 regions[preface_top] = preface top
 regions[preface_bottom] = preface bottom
 regions[page_top] = page top

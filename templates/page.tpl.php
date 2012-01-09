@@ -30,9 +30,9 @@
         <div id="header-group" class="header-group row <?php print $grid_width; ?>">
           <div id="header-group-inner" class="header-group-inner inner clearfix">
             <?php print render($page['header']); ?>
-            <?php print render($page['main_menu']); ?>
           </div><!-- /header-group-inner -->
         </div><!-- /header-group -->
+        <?php print render($page['main_menu']); ?>
       </div><!-- /header-group-wrapper -->
       
       <!-- preface-top row: width = grid_width -->
