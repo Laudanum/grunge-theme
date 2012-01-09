@@ -1,0 +1,122 @@
+; $Id: grunge.info,v 1.1 2010/09/11 20:26:56 atelier Exp $
+; upgraded using http://fusiondrupalthemes.com/support/theme-developers/upgrading-subthemes/converting-drupal-6-fusion-themes-drupal-7
+
+name = Grunge
+description = Fusion sub-theme based on an original GPL theme by <a href="http://www.rockettheme.com/" target="_blank" />RocketTheme</a>. Drupal port provided by <a href="http://www.sandianstudio.com/" target="_blank" />Sandian Studio</a>.
+base theme = fusion_core
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/grunge-style.css
+
+scripts[] = js/grunge-script.js
+
+regions[sidebar_first] = sidebar first
+regions[sidebar_second] = sidebar second
+regions[header_top] = header top
+regions[header] = header
+regions[preface_top] = preface top
+regions[preface_bottom] = preface bottom
+regions[page_top] = page top
+regions[page_bottom] = page bottom
+regions[content] = content
+regions[postscript_top] = postscript top
+regions[postscript_bottom] = postscript bottom
+regions[footer] = footer
+regions[node_top] = node top
+regions[node_bottom] = node bottom
+regions[help] = Help
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+; Default theme settings
+settings[theme_grid] = grid12-960
+settings[theme_grid_options][] = grid12-960
+settings[theme_font_size] = font-size-12
+settings[sidebar_layout] = sidebars-both-last
+settings[sidebar_first_width] = 4
+settings[sidebar_second_width] = 2
+
+; Default theme settings
+; settings[theme_grid] = grid16-960
+; settings[theme_grid_options][] = grid16-960
+settings[theme_grid_options][] = grid16-fluid
+settings[theme_grid_options][] = grid12-960
+settings[theme_grid_options][] = grid12-fluid
+settings[fluid_grid_width] = fluid-100
+; settings[sidebar_layout] = sidebars-split
+; settings[sidebar_first_width] = 3
+; settings[sidebar_second_width] = 3
+settings[theme_font] = none
+; settings[theme_font_size] = font-size-13
+settings[breadcrumb_display] = 1
+settings[search_snippet] = 1
+settings[search_info_type] = 1
+settings[search_info_user] = 1
+settings[search_info_date] = 1
+settings[search_info_comment] = 1
+settings[search_info_upload] = 1
+settings[block_config_link] = 1
+settings[grid_mask] = 0
+
+; Grid layout settings (Advanced)
+; Nested grid regions without full-width wrappers
+settings[grid_nested_regions][] = sidebar_first
+settings[grid_nested_regions][] = sidebar_second
+settings[grid_nested_regions][] = header
+settings[grid_nested_regions][] = preface_bottom
+settings[grid_nested_regions][] = content
+settings[grid_nested_regions][] = postscript_top
+settings[grid_nested_regions][] = node_top
+settings[grid_nested_regions][] = node_bottom
+settings[grid_nested_regions][] = help
+; Nested region width adjustments: adjacent regions to subtract for correct region width
+settings[grid_adjusted_regions][preface_bottom][] = sidebar_first
+settings[grid_adjusted_regions][help][] = sidebar_first
+settings[grid_adjusted_regions][help][] = sidebar_second
+settings[grid_adjusted_regions][content][] = sidebar_first
+settings[grid_adjusted_regions][content][] = sidebar_second
+settings[grid_adjusted_regions][node_top][] = sidebar_first
+settings[grid_adjusted_regions][node_top][] = sidebar_second
+settings[grid_adjusted_regions][node_bottom][] = sidebar_first
+settings[grid_adjusted_regions][node_bottom][] = sidebar_second
+settings[grid_adjusted_regions][postscript_top][] = sidebar_first
+; Nested group width adjustments: adjacent regions to subtract for correct group width
+settings[grid_adjusted_groups][main_group][] = sidebar_first
+settings[grid_adjusted_groups][content_group][] = sidebar_first
+settings[grid_adjusted_groups][content_group][] = sidebar_second
+; Nested region fluid width adjustments: regions outside a parent group to subtract to get correct parent width
+settings[grid_adjusted_regions_fluid][sidebar_second][] = sidebar_first
+settings[grid_adjusted_regions_fluid][content][] = sidebar_first
+settings[grid_adjusted_regions_fluid][content][] = sidebar_second
+; Nested group fluid width adjustments: regions inside a parent group to subtract to get remaining width
+settings[grid_adjusted_groups_fluid][content_group][] = sidebar_second
+
+fusion[api] = 2
+fusion[directory] = skins
+
+; Inherit Skinr styles from Fusion Core
+skinr[options][inherit_skins] = true
+
+; Disable 12 column grid block widths inherited from fusion_core
+;skinr[grid12-width] =
+
+; Sample Skinr style (uncomment to use, see Skinr section in CSS)
+;skinr[fusion-example-styles][title] = Sample Skinr block styles
+;skinr[fusion-example-styles][type] = checkboxes
+;skinr[fusion-example-styles][features][] = block
+;skinr[fusion-example-styles][options][1][label] = My sample Skinr style
+;skinr[fusion-example-styles][options][1][class] = fusion-example-stylename
+
+; Information added by drupal.org packaging script on 2010-09-17
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "grunge"
+
