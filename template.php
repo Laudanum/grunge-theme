@@ -13,6 +13,13 @@ function grunge_breadcrumb($breadcrumb) {
 
 function grunge_preprocess_page(&$vars) {
   static $grid;
+  
+//  add in the background override
+  $header_background = theme_get_setting('header_background_file', 'grunge');
+  if ( $header_background ) {
+    $data = "body { background-image: url($header_background) ! important; }";
+    drupal_add_css($data, array("type"=>"inline"));
+  }
 
   // Initialize grid info once per page
   if (!isset($grid)) {
