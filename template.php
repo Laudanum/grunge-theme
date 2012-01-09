@@ -17,7 +17,7 @@ function grunge_preprocess_page(&$vars) {
 //  add in the background override
   $header_background = theme_get_setting('header_background_file', 'grunge');
   if ( $header_background ) {
-    $data = "body { background-image: url($header_background) ! important; }";
+    $data = "body, .footer-wrapper { background-image: url($header_background) ! important; }";
     drupal_add_css($data, array("type"=>"inline"));
   }
 
