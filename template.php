@@ -55,3 +55,26 @@ function grunge_preprocess_block(&$vars) {
   $vars['sidebar_first_width'] = $grid['name'] . $grid['sidebar_first_width'];
   $vars['sidebar_second_width'] = $grid['name'] . $grid['sidebar_second_width'];
 }
+
+
+function grunge_preprocess_node(&$vars) {
+//  override the header background for this node
+  if ( $vars['page'] ){
+    if ( isset($vars['field_header_background']) ) {
+      $header_background = $vars['node']->field_header_background['und'][0]['filename'];
+      // url
+      $vars['masthead_raw'] = image_style_url('header-background', $header_background); 
+      // html
+//      $vars['masthead'] = theme_image_style(array('style_name' => 'header-background', 'path' => $header_background, 'width'=>960, 'height'=>'auto'));
+
+      if ( $header_background ) {
+        $data = "body, .footer-wrapper { background-image: url(" . $vars['masthead_raw'] . ") ! important; }";
+        drupal_add_css($data, array("type"=>"inline"));
+      }
+
+      unset($vars['field_header_background']);
+      unset($vars['node']->field_header_background);
+//      krumo($vars);
+    }
+  }
+}

@@ -28,6 +28,8 @@
       <?php 
         hide($content['comments']);
         hide($content['links']);
+//      dont' display header background overrides
+        hide($content['field_header_background']);
         print render($content);
       ?>
     </div>
