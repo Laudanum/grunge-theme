@@ -297,78 +297,93 @@ ul.menu ul ul {
 }
 
 #main-menu-inner ul.main-menu,
-#main-menu-inner ul.main-menu * {
+#main-menu-inner ul.menu  *,
+#main-menu-inner ul.main-menu  * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-#main-menu-inner ul.main-menu {
+#main-menu-inner ul.menu ,
+#main-menu-inner ul.main-menu  {
 	line-height: 1.0;
-}
-
-#main-menu-inner ul.main-menu {
 	float: right;
   margin-right: 10px;
 }
 
-#main-menu-inner ul.main-menu ul {
+#main-menu-inner ul.menu  ul,
+#main-menu-inner ul.main-menu  ul {
 	position: absolute;
 	top: -999em;
 	width: 170px; /* left offset of submenus need to match (see below) */
 }
 
-#main-menu-inner ul.main-menu ul li {
+#main-menu-inner ul.menu  ul li,
+#main-menu-inner ul.main-menu  ul li {
 	width: 100%;
 }
 
-#main-menu-inner ul.main-menu li:hover {
+#main-menu-inner ul.menu  li:hover,
+#main-menu-inner ul.main-menu  li:hover {
 	visibility: inherit; /* fixes IE7 'sticky bug' */
 }
 
-#main-menu-inner ul.main-menu li {
+#main-menu-inner ul.menu  li,
+#main-menu-inner ul.main-menu  li {
 	float: left;
 	position: relative;
 	background-image : none;
 	height : 31px;
 }
 
-#main-menu-inner ul.main-menu a {
+#main-menu-inner ul.menu  a,
+#main-menu-inner ul.main-menu  a {
 	display: block;
 	position: relative;
 }
 
-#main-menu-inner ul.main-menu li:hover ul,
-#main-menu-inner ul.main-menu li.sfHover ul {
+#main-menu-inner ul.menu  li:hover ul,
+#main-menu-inner ul.main-menu  li:hover ul,
+#main-menu-inner ul.menu  li.sfHover ul,
+#main-menu-inner ul.main-menu  li.sfHover ul {
 	left: 0;
 	top: 31px; /* match top ul list item height */
 	z-index: 99;
 }
 
-#main-menu-inner ul.main-menu li:hover li ul,
-#main-menu-inner ul.main-menu li.sfHover li ul {
+#main-menu-inner ul.menu  li:hover li ul,
+#main-menu-inner ul.main-menu  li:hover li ul,
+#main-menu-inner ul.menu  li.sfHover li ul,
+#main-menu-inner ul.main-menu  li.sfHover li ul {
 	top: -999em;
 }
 
-#main-menu-inner ul.main-menu li li:hover ul,
-#main-menu-inner ul.main-menu li li.sfHover ul {
+#main-menu-inner ul.menu  li li:hover ul,
+#main-menu-inner ul.main-menu  li li:hover ul,
+#main-menu-inner ul.menu  li li.sfHover ul,
+#main-menu-inner ul.main-menu  li li.sfHover ul {
 	left: 170px; /* match ul width */
 	top: 0;
 }
 
-#main-menu-inner ul.main-menu li li:hover li ul,
-#main-menu-inner ul.main-menu li li.sfHover li ul {
+#main-menu-inner ul.menu  li li:hover li ul,
+#main-menu-inner ul.main-menu  li li:hover li ul,
+#main-menu-inner ul.menu  li li.sfHover li ul,
+#main-menu-inner ul.main-menu  li li.sfHover li ul {
 	top: -999em;
 }
 
-#main-menu-inner ul.main-menu li li li:hover ul,
-#main-menu-inner ul.main-menu li li li.sfHover ul {
+#main-menu-inner ul.menu  li li li:hover ul,
+#main-menu-inner ul.main-menu  li li li:hover ul,
+#main-menu-inner ul.menu  li li li.sfHover ul,
+#main-menu-inner ul.main-menu  li li li.sfHover ul {
 	left: 170px; /* match ul width */
 	top: 0;
 }
 
 /*** Skin ***/
-#main-menu-inner ul.main-menu a {
+#main-menu-inner ul.menu  a,
+#main-menu-inner ul.main-menu  a {
 	background: url(../images/arrow-on.png) 9px 50% no-repeat;
   font-size: 15px;
   padding: 5px 18px 5px 21px;
@@ -377,73 +392,99 @@ ul.menu ul ul {
   text-transform: uppercase;
 }
 
-#main-menu-inner ul.main-menu a,
-#main-menu-inner ul.main-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+#main-menu-inner ul.menu  a,
+#main-menu-inner ul.main-menu  a,
+#main-menu-inner ul.menu  a:visited ,
+#main-menu-inner ul.main-menu  a:visited  { /* visited pseudo selector so IE6 applies text colour*/
   color: #FFF;
   font-family: 'Bebas', Arial, Helvetica, sans-serif;
 }
 
-#main-menu-inner ul.main-menu li {
+#main-menu-inner ul.menu  li,
+#main-menu-inner ul.main-menu  li {
   padding: 1px;
   border: none;
 }
 
-#main-menu-inner ul.main-menu li.active-trail,
-#main-menu-inner ul.main-menu li:hover,
-#main-menu-inner ul.main-menu li.sfHover {
+#main-menu-inner ul.menu  li.active-trail,
+#main-menu-inner ul.main-menu  li.active-trail,
+#main-menu-inner ul.menu  li:hover,
+#main-menu-inner ul.main-menu  li:hover,
+#main-menu-inner ul.menu  li.sfHover,
+#main-menu-inner ul.main-menu  li.sfHover {
   padding: 0;
   border: 1px solid #000;
 }
 
-#main-menu-inner ul.main-menu li.active-trail li,
-#main-menu-inner ul.main-menu li:hover li,
-#main-menu-inner ul.main-menu li.sfHover li {
+#main-menu-inner ul.menu  li.active-trail li,
+#main-menu-inner ul.main-menu  li.active-trail li,
+#main-menu-inner ul.menu  li:hover li,
+#main-menu-inner ul.main-menu  li:hover li,
+#main-menu-inner ul.menu  li.sfHover li,
+#main-menu-inner ul.main-menu  li.sfHover li {
   border: none;
   border-top: 1px dashed #000;
 }
-#main-menu-inner ul.main-menu li.sfHover li.first {
+#main-menu-inner ul.menu  li.sfHover li.first,
+#main-menu-inner ul.main-menu  li.sfHover li.first {
   border-top : none;
 }
 
-#main-menu-inner ul.main-menu li ul {
+#main-menu-inner ul.menu  li ul,
+#main-menu-inner ul.main-menu  li ul {
 	border: 1px solid #000;
   background-color: #47270A;
   margin-left: -1px;
 }
 
-#main-menu-inner ul.main-menu li ul ul {
+#main-menu-inner ul.menu  li ul ul,
+#main-menu-inner ul.main-menu  li ul ul {
   margin-top: -1px;
   margin-left: 0;
 }
 
-#main-menu-inner ul.main-menu li li {
+#main-menu-inner ul.menu  li li,
+#main-menu-inner ul.main-menu  li li {
   padding: 0;
   border: none;
   border-top: 1px dashed #000;
 }
 
-#main-menu-inner ul.main-menu li li.last {
+#main-menu-inner ul.menu  li li.last,
+#main-menu-inner ul.main-menu  li li.last {
 
 }
 
-#main-menu-inner ul.main-menu li:hover a,
-#main-menu-inner ul.main-menu li.sfHover a {
+#main-menu-inner ul.menu  li:hover a,
+#main-menu-inner ul.main-menu  li:hover a,
+#main-menu-inner ul.menu  li.sfHover a,
+#main-menu-inner ul.main-menu  li.sfHover a {
   background: url(../images/arrow-down.png) 9px 50% no-repeat #53300C;
 }
 
-#main-menu-inner ul.main-menu li:hover li:hover a,
-#main-menu-inner ul.main-menu li.sfHover li.sfHover a,
-#main-menu-inner ul.main-menu li:hover li:hover li:hover a,
-#main-menu-inner ul.main-menu li.sfHover li.sfHover li.sfHover a {
+#main-menu-inner ul.menu  li:hover li:hover a,
+#main-menu-inner ul.main-menu  li:hover li:hover a,
+#main-menu-inner ul.menu  li.sfHover li.sfHover a,
+#main-menu-inner ul.main-menu  li.sfHover li.sfHover a,
+#main-menu-inner ul.menu  li:hover li:hover li:hover a,
+#main-menu-inner ul.main-menu  li:hover li:hover li:hover a,
+#main-menu-inner ul.menu  li.sfHover li.sfHover li.sfHover a,
+#main-menu-inner ul.main-menu  li.sfHover li.sfHover li.sfHover a {
 	background: url(../images/arrow-down.png) 9px 50% no-repeat #47270A;
 }
 
-#main-menu-inner ul.main-menu a.active,
-#main-menu-inner ul.main-menu a:hover,
-#main-menu-inner ul.main-menu li:hover li a,
-#main-menu-inner ul.main-menu li.sfhover li a,
-#main-menu-inner ul.main-menu li:hover li:hover li a,
-#main-menu-inner ul.main-menu li.sfHover li.sfHover li a {
+#main-menu-inner ul.menu  a.active,
+#main-menu-inner ul.main-menu  a.active,
+#main-menu-inner ul.menu  a:hover,
+#main-menu-inner ul.main-menu  a:hover,
+#main-menu-inner ul.menu  li:hover li a,
+#main-menu-inner ul.main-menu  li:hover li a,
+#main-menu-inner ul.menu  li.sfhover li a,
+#main-menu-inner ul.main-menu  li.sfhover li a,
+#main-menu-inner ul.menu  li:hover li:hover li a,
+#main-menu-inner ul.main-menu  li:hover li:hover li a,
+#main-menu-inner ul.menu  li.sfHover li.sfHover li a,
+#main-menu-inner ul.main-menu  li.sfHover li.sfHover li a {
 	background: url(../images/arrow-on.png) 9px 50% no-repeat #53300C;
 }
 
