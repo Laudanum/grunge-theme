@@ -158,7 +158,11 @@ body {
 }
 
 #header-group-wrapper {
+/* d6
 	min-height: 120px;
+	*/
+/* rocket themes */
+	height : 320px;
 }
 
 .header-group {
