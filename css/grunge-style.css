@@ -1575,3 +1575,16 @@ a.readon span {
   border-left : none;
   border-top : none;
 }
+
+/* field collections - laudanum */
+.field-name-field-property-key {
+  display : block;
+  float : left;
+  width : 200px;
+  font-style : italic;
+}
+
+.field-name-field-property-value {
+  display : block;
+  float : left;
+}
