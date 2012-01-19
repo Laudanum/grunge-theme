@@ -166,6 +166,7 @@ body {
 }
 
 .header-group {
+  margin : 0 auto;
 }
 
 #header-group-inner .block,

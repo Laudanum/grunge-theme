@@ -27,12 +27,13 @@
       
       <!-- header-group row: width = grid_width -->
       <div id="header-group-wrapper" class="header-group-wrapper full-width">
+        <?php print render($page['main_menu']); ?>
         <div id="header-group" class="header-group row <?php print $grid_width; ?>">
           <div id="header-group-inner" class="header-group-inner inner clearfix">
+            headers
             <?php print render($page['header']); ?>
           </div><!-- /header-group-inner -->
         </div><!-- /header-group -->
-        <?php print render($page['main_menu']); ?>
       </div><!-- /header-group-wrapper -->
       
       <!-- preface-top row: width = grid_width -->
