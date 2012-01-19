@@ -1605,3 +1605,6 @@ a.readon span {
 .field-collection-container {
   border-bottom : none;
 }
+.field-collection-container .field-items .field-item {
+  margin-bottom : 0px;
+}
