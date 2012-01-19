@@ -1580,11 +1580,16 @@ a.readon span {
 .field-name-field-property-key {
   display : block;
   float : left;
-  width : 200px;
+  width : 100px;
   font-style : italic;
 }
 
 .field-name-field-property-value {
   display : block;
   float : left;
+}
+
+.field-name-field-property-value p {
+  margin-top : 0;
+  margin-bottom : 0.5em;
 }
