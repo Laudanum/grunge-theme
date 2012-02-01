@@ -100,7 +100,7 @@ body {
   padding: 5px 0;
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
   background: url(../images/template.png) repeat-x scroll 0 3px #507E83;
 }
 
@@ -116,7 +116,7 @@ body {
   height: 10px;
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 30;
   background: url(../images/template.png) 0 -40px repeat-x;
 }
 
@@ -162,7 +162,7 @@ body {
 	min-height: 120px;
 	*/
 /* rocket themes */
-	height : 320px;
+	height : 355px;
 }
 
 .header-group {
@@ -205,6 +205,8 @@ div#header-top.block {
 .branding-wrapper {
 	height: 30px;
   background: #507E83;
+  z-index : 40;
+  position : relative;
 }
 
 .branding-inner {
@@ -281,7 +283,8 @@ ul.menu ul ul {
 #main-menu {
 	width: 100%;
   background: url(../images/headerbg.png) repeat scroll 0 0 transparent;
-  z-index: 1;
+  z-index: 10;
+  position : relative ;
 }
 
 #main-menu .block {
@@ -298,7 +301,8 @@ ul.menu ul ul {
 #main-menu-inner {
 	margin: 0 auto;
   width: 960px;
-  z-index: 2;
+  z-index: 20;
+  position : relative;
 }
 
 #main-menu-inner ul.main-menu,
@@ -353,7 +357,7 @@ ul.menu ul ul {
 #main-menu-inner ul.main-menu  li.sfHover ul {
 	left: 0;
 	top: 31px; /* match top ul list item height */
-	z-index: 99;
+	z-index: 20;
 }
 
 #main-menu-inner ul.menu  li:hover li ul,

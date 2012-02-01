@@ -8,7 +8,7 @@
       });
     }
   };
-
+/*
   Drupal.behaviors.grungeSuperfish = {
     attach: function(context) {
       $("#primary-menu ul.sf-menu").superfish({
@@ -20,6 +20,27 @@
         dropShadows: false,
         disableHI:   true
       }).supposition();
+    }
+  };
+*/
+
+  Drupal.behaviors.grungeCarousel = {
+    attach: function(context) {
+      $(".jcarousel-container").click(function(e) {
+//  did we click on the navigators or arrows ? if so continue 
+        if (e.target !== this) {
+          if ( $(e.target).hasClass("jcarousel-next") || $(e.target).hasClass("jcarousel-prev") ){
+            return;
+          }
+        }
+        
+//  how do we know which slide is active? its in the navigation - ick
+        active_index = $(this).find(".jcarousel-navigation .active").attr("jcarousel-page");
+        active_link = $(".jcarousel .jcarousel-item-" + active_index + " .views-field-title a").attr("href");
+        if ( active_link )
+          location.href = active_link;
+        
+      });
     }
   };
 })(jQuery);
