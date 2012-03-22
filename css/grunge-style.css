@@ -280,10 +280,13 @@ ul.menu ul ul {
 /-------------------------------------------------------------- */
 /* Add general styles for primary menu here, such as typography, borders, floats,
   or spacing above/below */
+
+#main-menu-wrapper {
+  background: url(../images/headerbg.png) repeat scroll 0 0 transparent;
+}
 #main-menu {
 	width: 100%;
-  background: url(../images/headerbg.png) repeat scroll 0 0 transparent;
-  z-index: 10;
+  z-index: 100;
   position : relative ;
 }
 
@@ -1575,9 +1578,11 @@ a.readon span {
   border: 1px solid #2F2106;
 }
 
-.sf-menu.sf-style-default li li:hover, 
 .sf-menu.sf-style-default li li,
 .sf-menu.sf-style-default li {
+  background-color : transparent;
+}
+.sf-menu.sf-style-default li:hover {  
   background-color : #53300C;
 }
 .sf-menu.sf-style-default a {
