@@ -7,7 +7,7 @@ html {
 	overflow-y: scroll; /* always show FF scroll bars */
 }
 
-body {
+body.html {
   font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
   background: url(../images/wood.jpg) repeat-x scroll 0 0 #110302;
   color: #3F310C;
