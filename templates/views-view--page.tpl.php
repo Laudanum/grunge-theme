@@ -34,7 +34,7 @@
  * $skinr variable and <div class="inner content"> added for Fusion theming
  */
 ?>
-<div id="view-id-<?php print $name; ?>-<?php print $display_id; ?>" class="<?php print $classes; ?> <?php print $skinr; ?>">
+<div id="view-id-<?php print $name; ?>-<?php print $display_id; ?>" class="<?php print $classes; ?> <?php if ( isset($skinr) ) print $skinr; ?>">
   <?php if ($admin_links): ?>
     <div class="views-admin-links views-hide">
       <?php print $admin_links; ?>

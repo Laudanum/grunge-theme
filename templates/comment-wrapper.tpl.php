@@ -33,10 +33,11 @@
 ?>
 
 <?php if ($content) : ?>
-<div id="comments" class="comments block <?php print $skinr; ?>">
+<div id="comments" class="comments block <?php if ( isset($skinr) ) print $skinr; ?>">
   <h2 class="comments-header">
     <?php print t('Comments'); ?>
   </h2>
-  <?php print $content; ?>
+  <?php print render($content['comment_form']); ?>
+  <?php print render($content['comments']); ?>
 </div>
 <?php endif; ?><!-- /comments -->
