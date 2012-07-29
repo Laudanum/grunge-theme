@@ -868,11 +868,13 @@ h2.title {
 /* Colors and styles for linked node titles, ie. teaser listing at /node */
 h2.title a:link,
 h2.title a:visited {
+  color: #383022;
 }
 
 h2.title a:hover,
 h2.title a:focus,
 h2.title a:active {
+  color: #383022;
 }
 
 /* Separators and padding for node teasers */

@@ -4,6 +4,9 @@
     attach: function(context) {
       $('h1.title, .block h2.title').each(function(){
           var bt = $(this);
+          if ( bt.find('a').size() ) {
+            bt = bt.find('a')[0];
+          }
           bt.html( bt.text().replace(/(^\w+)/,'<span class="first-word">$1</span>') );
       });
     }
