@@ -1410,7 +1410,10 @@ div.poll div.bar div.foreground {
   padding-left: 3px;
 }
 
-
+/* Grunge jcarousel overrides */
+.jcarousel-skin-Grunge ul.jcarousel-navigation li {
+display:none;
+}
 /* Ubercart - catalog
 /-------------------------------------------------------------- */
 
